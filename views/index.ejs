@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' type='text/css' href='stylesheets/main.css'>
+    <title>Simon Says Game</title>
+  </head>
+
+  <body>
+    <div id="gameContainer">
+      <div id="gameArea">
+        <button class="reset">Reset</button>
+        <div id="board">
+          <div id="d1">
+            <button type="submit" class="button red" id="red"></button>
+            <button type="submit" class="button yellow" id="yellow"></button>
+          </div>
+            <div class="blackCircle"><h1>Start</h1></div>
+          <div id="d2">
+            <button type="submit" class="button green" id="green"></button>
+            <button type="submit" class="button blue" id="blue"></button>
+          </div>
+        </div>
+        <form action="/scores/create" method="POST" id="nameForm">
+          <input id="name" name="name" type="text" placeholder="Enter your name here">
+        </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="javascripts/Game.js"></script>
+    <script src="javascripts/ColorSequence.js"></script>
+    <script src="javascripts/GamePlay.js"></script>
+    <script src="javascripts/Player.js"></script>
+    <script src="javascripts/miscFunctions.js"></script>
+    <script src="javascripts/start.js"></script>
+  </body>
+
+</html>
+
+<!--
+TODO:
+Make backend for highscore chart
+ -->

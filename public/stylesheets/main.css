@@ -1,0 +1,123 @@
+body {
+  background-color:black;
+}
+input {
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  background-color: transparent;
+  color: white;
+}
+#gameContainer {
+  background-color: black;
+  align-items: center;
+  margin:auto;
+}
+
+#gameArea {
+  height: 800px;
+  width:1200px;
+  background-color: black;
+  margin: 0 auto;
+  z-index: 0;
+  align-items:center;
+}
+
+.blackCircle {
+    position: absolute;
+    display: inline;
+    height: 20rem;
+    width: 20rem;
+
+    z-index: 1;
+    background-color: black;
+    border-radius: 50%;
+
+    margin-left: 224px;
+    margin-top: -155px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  color:black;
+  text-shadow: -1px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue;
+  margin-top:116px;
+
+}
+
+.reset{
+  margin: 80px 80px 0 0 0;
+  color:black;
+  border-width: 0;
+  font-size:40px;
+  text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
+  background-color: black;
+  height:3rem;
+  width:8rem;
+}
+
+.button {
+  height:20rem;
+  width: 20rem;
+  border:none;
+  cursor: pointer;
+  margin:2rem;
+  transition: background-color 400ms ease;
+}
+
+.red {
+background-color:#B20000;
+opacity:0.5;
+border-radius: 30em 0 0 0;
+}
+
+.red:active ,
+.red.flash {
+background-color:#ff7f7f;
+opacity:1;
+}
+
+.yellow {
+background-color:#b2b200;
+opacity:0.5;
+border-radius: 0 30em 0 0;
+}
+
+.yellow:active ,
+.yellow.flash {
+  background-color:#ffff7f;
+  opacity:1;
+}
+
+.green {
+background-color:#004c00;
+opacity:0.5;
+border-radius: 0 0 0 30em;
+}
+
+.green:active ,
+.green.flash {
+background-color:#329932;
+opacity:1;
+}
+
+.blue {
+background-color:#1762b2;
+opacity:0.5;
+border-radius: 0 0 30em 0;
+}
+
+.blue:active,
+.blue.flash {
+background-color:#64afff;
+opacity:1;
+}
+
+#board {
+  border:black solid 2px;
+  width: 773px;
+  margin: auto;
+}
+
+

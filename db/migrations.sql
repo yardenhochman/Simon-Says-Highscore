@@ -1,0 +1,10 @@
+\c highscores
+
+DROP TABLE scores;
+
+CREATE TABLE IF NOT EXISTS scores (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  score VARCHAR(255) NOT NULL,
+  date VARCHAR(255) NOT NULL
+);
